@@ -1,0 +1,46 @@
+<section id="wrapper">
+<section id="container">
+  <div id="icon">
+    <p class="whiteText center">25</p>
+
+  </div>
+  <div id="sec">
+
+    <h1>
+      Обучение по продажам
+    </h1>
+    <div class="profit">
+      <p class="grayText">
+        Вы сделали {{amountOfDeals}} продаж и заработали:
+      </p>
+      <p class="money">
+        ${{profit}}
+      </p>
+    </div>
+    <div id="containerProgress">
+      <p id="plan">
+        <b>
+          Месячный план выполнен на
+        </b>
+      </p>
+      <div id="progress">
+        <div id="label" class="center">
+          <b>
+            {{persent}}%
+          </b>
+        </div>
+        <div id="bar" [ngStyle]="{width: persent+'%'}">
+
+        </div>
+
+      </div>
+      <div id="buttonContainer">
+        <button class="whiteText" (click)="getPercent()">
+          Продолжить
+        </button>
+        <p id="timeLeft" class="grayText center">Осталось {{daysLeft}} дней</p>
+      </div>
+    </div>
+  </div>
+</section>
+</section>

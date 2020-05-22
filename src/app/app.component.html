@@ -1,0 +1,8 @@
+<header>
+  <nav>
+    <div><a [ngStyle]="itemHome" id="Home" class="whiteText" routerLink="/" (click)="selectMenu($event)">Home</a></div>
+    <div><a [ngStyle]="itemCharacters" id="Characters" class="whiteText" routerLink="/characters" (click)="selectMenu($event)">Characters</a></div>
+    <div><a [ngStyle]="itemProfit" id="Profit" class="whiteText" routerLink="/my-profit" (click)="selectMenu($event)" >Profit</a></div>
+  </nav>
+</header>
+<router-outlet></router-outlet>

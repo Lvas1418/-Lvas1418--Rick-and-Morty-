@@ -1,0 +1,28 @@
+<div>
+  <table>
+    <thead>
+    <tr>
+      <th id="w">
+        Image
+      </th>
+      <th>
+        Name
+        <p (click)="descendingSorting('name')" class="icon-down"></p>
+        <p (click)="ascendingSorting('name')" class="icon-up"></p>
+      </th>
+    </tr>
+    </thead>
+  </table>
+</div>
+<div class="wrapTab">
+  <table>
+    <tbody>
+    <tr *ngIf="characters">
+    <tr *ngFor="let character of characters" (click)="showDialog(character)">
+      <td><img src="{{ character.image }}"></td>
+      <td>{{ character.name }}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<app-popup *ngIf="isModalVisible" [selectedCharackter]="character"></app-popup>

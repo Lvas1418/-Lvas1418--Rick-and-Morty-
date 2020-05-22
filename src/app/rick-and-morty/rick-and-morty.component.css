@@ -1,0 +1,26 @@
+p{
+  color:#ff950b;
+  font-family: Arial;
+  width:80%;
+  padding: 80px;
+}
+.container {
+  float: left;
+  margin-top: 100px;
+  background-color: #000000;
+  width: 100%;
+}
+.wrapper{
+  position: relative;
+  background-color: #000000;
+  height: 100vh;
+  min-width: 800px;
+}
+p{
+
+}
+img{
+  float: left;
+  display: inline;
+}
+

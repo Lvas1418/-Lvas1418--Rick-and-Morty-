@@ -1,0 +1,64 @@
+<section class="wrapper" (click)="closePopup()">
+  <section class="mainSection" (click)="stopEvent($event)">
+    <div id="icon" (click)="closePopup()">
+      <p class="whiteText center"><b>X</b></p>
+    </div>
+    <div id="imgContainer">
+      <img src="{{selectedCharackter.image}}" alt="Caracter {{selectedCharackter.name}}">
+      <div id="transparentContainer" class="whiteText">
+        <p id="nameOfChrackter">
+          {{selectedCharackter.name}}
+        </p>
+        <p id="idOfChrackter">
+          id: {{selectedCharackter.id}} - created {{selectedCharackter.created | date}}
+        </p>
+      </div>
+    </div>
+    <section id="detailsOfCharackter">
+
+      <ul>
+        <li>
+          <p>
+            status
+          </p>
+          <p class="content">
+            {{selectedCharackter.status}}
+          </p>
+        </li>
+        <li>
+          <p>
+            species
+          </p>
+          <p class="content">
+            {{selectedCharackter.species}}
+          </p>
+        </li>
+        <li>
+          <p>
+            gender
+          </p>
+          <p class="content">
+            {{selectedCharackter.gender}}
+          </p>
+        </li>
+        <li>
+          <p>
+            origin
+          </p>
+          <p class="content">
+            {{selectedCharackter.origin.name}}
+          </p>
+        </li>
+        <li>
+          <p>
+            last location
+          </p>
+          <p class="content">
+            {{selectedCharackter.location.name}}
+          </p>
+        </li>
+      </ul>
+
+    </section>
+  </section>
+</section>
