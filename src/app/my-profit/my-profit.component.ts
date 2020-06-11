@@ -19,7 +19,7 @@ export class MyProfitComponent implements OnInit {
   ngOnInit() {
   }
 
-  getPercent(e) {
+  getPercent() {
     this.persent = 0;
     let result;
     this.daysLeft = angularMath.getIntegerRandomRange(0, 31);
