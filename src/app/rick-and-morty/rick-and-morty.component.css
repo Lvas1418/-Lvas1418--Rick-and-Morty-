@@ -1,6 +1,8 @@
 p{
   color:#ff950b;
   font-family: Arial;
+  text-align: justify;
+  line-height: 1.5;
   width:80%;
   padding: 80px;
 }
